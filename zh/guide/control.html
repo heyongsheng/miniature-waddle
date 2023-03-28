@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>隐藏控制按钮 | hevue-img-preview</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?14f7a4912d6da4ec11a2bce92d3ce7fd";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+      </script>
+    <script crossorigin="anonymous" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5787261417853528"></script>
+    <meta name="description" content="本组件是一个基于 vue 编写的 vue 图片预览组件，支持 pc 和手机端，支持单图和多图预览，仅传入一个图片地址，即可实现图片预览效果。手机端支持单指拖拽和双指缩放。页面各组件颜色均可可自定义，实现个性化设计，如果能帮上你，希望可以移步 GitHub ，或者码云 给个小星星，如果有任何使用意见或建议，也欢迎回复或者提交 issue">
+    
+    <link rel="preload" href="/assets/css/0.styles.58f1aab5.css" as="style"><link rel="preload" href="/assets/js/app.6252cd04.js" as="script"><link rel="preload" href="/assets/js/2.7fdeca7f.js" as="script"><link rel="preload" href="/assets/js/12.bb59991d.js" as="script"><link rel="prefetch" href="/assets/js/10.0507792f.js"><link rel="prefetch" href="/assets/js/11.680951b2.js"><link rel="prefetch" href="/assets/js/13.c05e5360.js"><link rel="prefetch" href="/assets/js/14.20b3fb60.js"><link rel="prefetch" href="/assets/js/15.26a61014.js"><link rel="prefetch" href="/assets/js/16.853644bd.js"><link rel="prefetch" href="/assets/js/17.4fcd3e4b.js"><link rel="prefetch" href="/assets/js/18.f26a449b.js"><link rel="prefetch" href="/assets/js/19.049cfd5d.js"><link rel="prefetch" href="/assets/js/20.7425a6f6.js"><link rel="prefetch" href="/assets/js/3.27f9a955.js"><link rel="prefetch" href="/assets/js/4.cba41479.js"><link rel="prefetch" href="/assets/js/5.944d7caa.js"><link rel="prefetch" href="/assets/js/6.fc0ad13f.js"><link rel="prefetch" href="/assets/js/7.bc5249fa.js"><link rel="prefetch" href="/assets/js/8.f542d709.js"><link rel="prefetch" href="/assets/js/9.2d095592.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.58f1aab5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">hevue-img-preview</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://juejin.cn/user/2911162523723566/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/heyongsheng/hevue-img-preview" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://juejin.cn/user/2911162523723566/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/heyongsheng/hevue-img-preview" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速上手</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/guide/getting-started.html" class="sidebar-link">安装及使用</a></li><li><a href="/zh/guide/updateLog.html" class="sidebar-link">更新日志</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/guide/options.html" class="sidebar-link">配置项</a></li><li><a href="/zh/guide/onePicture.html" class="sidebar-link">单图预览</a></li><li><a href="/zh/guide/morePicture.html" class="sidebar-link">多图预览</a></li><li><a href="/zh/guide/keyBoard.html" class="sidebar-link">快捷键</a></li><li><a href="/zh/guide/clickMaskCLose.html" class="sidebar-link">点击遮罩层关闭</a></li><li><a href="/zh/guide/theme.html" class="sidebar-link">主题</a></li><li><a href="/zh/guide/control.html" aria-current="page" class="active sidebar-link">隐藏控制按钮</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/control.html#示例" class="sidebar-link">示例</a></li></ul></li><li><a href="/zh/guide/closeFn.html" class="sidebar-link">关闭组件回调函数</a></li><li><a href="/zh/guide/changeFn.html" class="sidebar-link">切换图片回调函数</a></li></ul></section></li><li><a href="/zh/guide/support.html" class="sidebar-link">支持与反馈</a></li><li><a href="/zh/guide/job.html" class="sidebar-link">落魄前端在线求职</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="隐藏控制按钮"><a href="#隐藏控制按钮" class="header-anchor">#</a> 隐藏控制按钮</h1> <p>有些人喜欢简洁一些的页面，而插件自带的过多控制按钮，也确实影响美观，您可以像自定义主题那样，设置css来隐藏您不想看到的按钮，如果您觉得那样麻烦，我们也提供了配置项来对按钮的显示和隐藏进行控制。</p> <table><thead><tr><th>字段</th> <th>类型</th> <th>默认值</th> <th>备注</th></tr></thead> <tbody><tr><td>controlBar</td> <td>Boolean</td> <td>true</td> <td>是否显示控制条及页码</td></tr> <tr><td>closeBtn</td> <td>Boolean</td> <td>true</td> <td>是否显示关闭按钮</td></tr> <tr><td>arrowBtn</td> <td>Boolean</td> <td>true</td> <td>是否显示左右翻页按钮</td></tr></tbody></table> <h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <p>快点击下面的图片试试看吧</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>如果您隐藏了关闭按钮，请一定要提供其他的关闭方式，例如点击遮罩层关闭。</p></div> <div><img src="/img/img-2.jpg" style="width:30%;"><img src="/img/img-3.jpg" style="width:30%;"><img src="/img/img-4.jpg" style="width:30%;"></div> <details class="custom-block details"><summary>点击查看代码</summary> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+      <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(item, index) in urlData<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span>
+      <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span>30%</span><span class="token punctuation">&quot;</span></span></span>
+      <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showImg(index)<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">urlData</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'/img/img-2.jpg'</span><span class="token punctuation">,</span>
+        <span class="token string">'/img/img-3.jpg'</span><span class="token punctuation">,</span>
+        <span class="token string">'/img/img-4.jpg'</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">showImg</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$hevueImgPreview</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">multiple</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">nowImgIndex</span><span class="token operator">:</span> index<span class="token punctuation">,</span>
+        <span class="token literal-property property">imgList</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>urlData<span class="token punctuation">,</span>
+        <span class="token literal-property property">controlBar</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">closeBtn</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">arrowBtn</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">clickMaskCLose</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新日期:</span> <span class="time">4/24/2021, 12:11:33 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/guide/theme.html" class="prev">
+        主题
+      </a></span> <span class="next"><a href="/zh/guide/closeFn.html">
+        关闭组件回调函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6252cd04.js" defer></script><script src="/assets/js/2.7fdeca7f.js" defer></script><script src="/assets/js/12.bb59991d.js" defer></script>
+  </body>
+</html>
